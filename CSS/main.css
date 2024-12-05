@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292727;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+header {
+    background-color:#292727;
+    margin: 2px 50px 2px 50px;
+    color: white;
+    text-align: center;
+    height: 10%;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    border: 5px red;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+nav {
+    margin: 5px;
+    border: 4px rgb(18, 236, 47);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_item {
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    height: 50px;
+    min-width: 200px;
+    background-color: rgb(3, 70, 70);
+    text-align: center;
+    display: flex;
+    flex: 1 1; 
+    justify-content: center; 
+    align-items: center;
+}
+
+article {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+figure {
+    border: 2px  #f2f700;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+figure img {
+    border: 2px  magenta;
+    min-width: 200px;
+    width: 30%;
+}
+
+article figure figcaption {
+    margin-left: 10px;
+    border: 2px #ffffff;
+    font-size: 36px;
+    min-width: 30%;
+    flex: 1 1;
+}
+
+
+footer {
+    text-align: left;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    main {
+        border: 5px  red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
